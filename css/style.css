@@ -1,0 +1,130 @@
+body{
+    background-position: center center;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),
+   url(../images/11.jpg) ;
+}
+    
+
+h1 {
+ 
+    font-size: 50px;
+    background-image: linear-gradient(30deg, #256d3b, #54b947);
+    padding: 15px;
+    overflow: hidden;
+  }
+
+.head{
+
+    /* font-size: 50px; */
+    color: white;
+       /*  */
+       padding-top: 3px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 7px;
+  margin-top: 50px;
+  /* margin-bottom: 6px; */
+  text-align: center;
+}
+
+ .head::before {
+    content: "";
+    width: calc(110%);
+    height: calc(110%);
+    position: absolute;
+    left: -10px;
+    top: -30px;
+    transform: translate(-50%, -50%);
+    background-image: conic-gradient(#d2001a 0% 20%, #e38b29 20% 40%, #554994 40% 60%, #ce598a 60% 80%, #3330e4 80% 100%);
+    animation: spinning 4s infinite linear;
+    z-index: -1;
+  }
+  
+  @keyframes spinning {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(45deg);
+    }
+    75% {
+      transform: rotate(315deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  p{
+    
+        font-size: 23px;
+       margin-block: 30px;
+       font-weight:bolder !important;
+     color: #25316d;
+       
+  }
+
+
+
+
+
+   button {
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 70px;
+    background-color: #ffe7bf;
+    color: #25316d;
+    transition: background-color 350ms, scale 350ms;
+    margin-bottom: 20px;
+  }
+  
+   button:hover {
+    background-color: #d6cda4;
+    scale: 1.07;
+  }
+
+
+
+  .section{
+    border-radius: 30px 10px 50px 76px;
+    background-color:lightgrey;
+    padding-inline: 40px;
+    padding-block: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  blockquote{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  h2{
+    font-weight: bold;
+  }
+
+
+
+
+  @media screen and (max-width: 992px) {
+    .container {
+      width:50%  !important;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 700px) {
+    .container {
+      width: 75% !important;
+    }
+  }
+
+  .container{
+    background-color: transparent;
+  }
